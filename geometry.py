@@ -42,3 +42,29 @@ class Rectangle:
       return (2 * self.l) + (2 * self.w)
     else:
       raise TypeError("Either length or width is None")
+  def length(self):
+    """
+    Finds the length of the rectangle using the width and area.
+
+    @doc [
+      @returns float | None
+      @raises TypeError | None
+    ]
+    """
+    if self.w != None and self.a != None:
+      return self.a / self.w
+    else:
+      raise TypeError("Either width or area is None")
+  def width(self):
+    """
+    Finds the width of the rectangle using the height and area.
+
+    @doc [
+      @returns float | None
+      @raises TypeError | None
+    ]
+    """
+    if self.l != None and self.a != None:
+      return self.a / self.l
+    else:
+      raise TypeError("Either length or area is None")
