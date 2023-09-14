@@ -1,3 +1,5 @@
+from .validate_type import validate_type
+
 class Rectangle:
   """
   Represents a rectangle.
